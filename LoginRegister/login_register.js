@@ -120,24 +120,35 @@ formularioDeRegistro.addEventListener("submit", async (evento) => {
       alertsRegister.removeChild(agregarDatos)
     }, 3000);
   } else {
-    // HACER ALERTA Y FUNCION ESTE USUARIO YA EXISTE
-  const usuarioSubido = await subirDatosADB(usuario)
-  if(usuarioSubido) {
-    const usuarioAgregado = document.createElement('div')
-    usuarioAgregado.className = 'usuarioAgregado'
-    const pUsuarioAgregado = document.createTextNode('Usuario registrado exitosamente')
-    alertsRegister.appendChild(usuarioAgregado)
-    usuarioAgregado.appendChild(pUsuarioAgregado)
-    setTimeout(() => {
-      alertsRegister.removeChild(usuarioAgregado)
-    }, 3000);
-  }}
+    const usuarioExistente = usuario.some((user) => user.emailInput === usuario.email && user.usernameInputme === usuario.username);
+    if (usuarioExistente) {
+      const elUsuarioExiste = document.createElement('div')
+      elUsuarioExiste.className = 'elUsuarioExiste'
+      const pElUsuarioExiste = document.createTextNode('El Usuario o Correo Electrónico ingresado ya existe')
+      alertsRegister.appendChild(elUsuarioExiste)
+      elUsuarioExiste.appendChild(pElUsuarioExiste)
+      setTimeout(() => {
+        alertsRegister.removeChild(elUsuarioExiste)
+      }, 3000);
+    // ALERTA Y FUNCION ESTE USUARIO YA EXISTE ARREGLAR
+    } else {
+    const usuarioSubido = await subirDatosADB(usuario)
+    if(usuarioSubido) {
+      const usuarioAgregado = document.createElement('div')
+      usuarioAgregado.className = 'usuarioAgregado'
+      const pUsuarioAgregado = document.createTextNode('Usuario registrado exitosamente')
+      alertsRegister.appendChild(usuarioAgregado)
+      usuarioAgregado.appendChild(pUsuarioAgregado)
+      setTimeout(() => {
+        alertsRegister.removeChild(usuarioAgregado)
+      }, 3000);
+    }}
   usernameInput.value = '';
   passwordInput.value = '';
   fullnameInput.value = '';
   emailInput.value = '';
 
-})
+}})
 
 formularioDeLogin.addEventListener("submit", async (evento) => {
   evento.preventDefault()
