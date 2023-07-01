@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login_register.css">
+    <title>Inicio de Sesion</title>
+</head>
+<body>
+    <main>
+        <div class="main_container">
+            <div class="box_trasera">
+                <div class="box_trasera_login" id="box_trasera_login">
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <p>Iniciar sesión para entrar en la pagina</p>
+                    <button id="btn-login">Inicar Sesión</button>
+                </div>
+                <div class="box_trasera_register" id="box_trasera_register">
+                    <h3>¿Aun no tienes una cuenta?</h3>
+                    <p>Registrate para que puedas iniciar sesión</p>
+                    <button id="btn-register">Registrarse</button>
+                </div>
+            </div>
+            <div class="container_login_register" id="container_login_register">
+                <form action="" class="form_login" id="form-login">
+                    <h2>Iniciar Sesión</h2>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="login-identifier-input" placeholder="name@example.com">
+                        <label for="floatingInput">Correo Electrónico o Usuario</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="login-password-input" placeholder="Password">
+                        <label for="floatingPassword">Contraseña</label>
+                    </div>
+                    <input class="input-submit" type="submit" value="Entrar">
+                    <div class="alerts_1" id="alerts_1"></div>
+                </form>
+                <form action="" class="form_register" id="form-register">
+                    <h2>Registrarse</h2>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="fullname-input" placeholder="name@example.com">
+                        <label for="floatingInput">Nombre completo</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="email-input" placeholder="name@example.com">
+                        <label for="floatingInput">Correo Electrónico</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="username-input" placeholder="Usuario">
+                        <label for="floatingInput">Usuario</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="password-input" placeholder="Password">
+                        <label for="floatingPassword">Contraseña</label>
+                    </div>
+                    <input class="input-submit" type="submit" value="Registrarse">
+                    <div class="alerts_2" id="alerts_2"></div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="login_register.js"></script>
+</body>
+</html>

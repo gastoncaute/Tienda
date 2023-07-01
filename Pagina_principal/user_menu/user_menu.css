@@ -1,0 +1,31 @@
+#user-menu {
+    display: none;
+}
+
+#user-menu.toggle{
+    position: absolute;
+    width: auto;
+    height: auto;
+    padding: 1rem;
+    top: 5rem;
+    right: 4.5rem;
+    background: rgba(0, 128, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 0 10px 10px;
+    justify-content: right;
+    z-index: 2;
+}
+
+#user-menu li {
+    margin: .8rem 0;
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+    padding: none;
+    font-size: medium;
+}
+
+#user-menu li a:hover {
+    color: #000;
+}

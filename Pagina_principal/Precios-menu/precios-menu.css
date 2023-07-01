@@ -1,0 +1,40 @@
+#precios-menu {
+    display: none;
+}
+
+#precios-menu.toggle{
+    position: fixed;
+    width: 35vh;
+    height: auto;
+    top: 11rem;
+    left: 19rem;
+    background: rgba(0, 128, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 0 10px 10px 10px;
+}
+
+#navbar ul li #precios-menu li {
+    margin: .8rem 0;
+}
+
+#navbar ul li #precios-menu li button {
+    color: #fff;
+    text-decoration: none;
+    padding: none;
+    font-size: medium;
+}
+
+#navbar ul li #precios-menu li button:hover {
+    color: #000;
+}
+
+#precios-menu li input{
+    width: 28vh;
+    height: 2rem;
+    padding: .5rem;
+    border-radius: 5px;
+    outline-color:  rgba(0, 128, 255, 0.9);
+    border-style: none;
+}

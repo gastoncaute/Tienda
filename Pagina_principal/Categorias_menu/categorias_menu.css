@@ -1,0 +1,30 @@
+#categorias-menu {
+    display: none;
+}
+
+#categorias-menu.toggle{
+    position: fixed;
+    width: 35vh;
+    height: auto;
+    top: 6.4rem;
+    left: 19rem;
+    background: rgba(0, 128, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 10px 10px 10px;
+}
+
+#navbar ul li #categorias-menu li {
+    margin: .8rem 0;
+}
+
+#categorias-menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: none;
+    font-size: medium;
+}
+
+#categorias-menu li a:hover {
+    color: #000;
+}
