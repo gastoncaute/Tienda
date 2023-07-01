@@ -120,18 +120,18 @@ formularioDeRegistro.addEventListener("submit", async (evento) => {
       alertsRegister.removeChild(agregarDatos)
     }, 3000);
   } else {
-    const usuarioExistente = usuario.some((user) => user.emailInput === usuario.email && user.usernameInputme === usuario.username);
-    if (usuarioExistente) {
-      const elUsuarioExiste = document.createElement('div')
-      elUsuarioExiste.className = 'elUsuarioExiste'
-      const pElUsuarioExiste = document.createTextNode('El Usuario o Correo Electrónico ingresado ya existe')
-      alertsRegister.appendChild(elUsuarioExiste)
-      elUsuarioExiste.appendChild(pElUsuarioExiste)
-      setTimeout(() => {
-        alertsRegister.removeChild(elUsuarioExiste)
-      }, 3000);
-    // ALERTA Y FUNCION ESTE USUARIO YA EXISTE ARREGLAR
-    } else {
+    // const usuarioExistente = usuario.some((user) => user.emailInput === usuario.email && user.usernameInputme === usuario.username);
+    // if (usuarioExistente) {
+    //   const elUsuarioExiste = document.createElement('div')
+    //   elUsuarioExiste.className = 'elUsuarioExiste'
+    //   const pElUsuarioExiste = document.createTextNode('El Usuario o Correo Electrónico ingresado ya existe')
+    //   alertsRegister.appendChild(elUsuarioExiste)
+    //   elUsuarioExiste.appendChild(pElUsuarioExiste)
+    //   setTimeout(() => {
+    //     alertsRegister.removeChild(elUsuarioExiste)
+    //   }, 3000);
+    // // ALERTA Y FUNCION ESTE USUARIO YA EXISTE ARREGLAR
+    // } else {
     const usuarioSubido = await subirDatosADB(usuario)
     if(usuarioSubido) {
       const usuarioAgregado = document.createElement('div')
@@ -148,7 +148,7 @@ formularioDeRegistro.addEventListener("submit", async (evento) => {
   fullnameInput.value = '';
   emailInput.value = '';
 
-}})
+})
 
 formularioDeLogin.addEventListener("submit", async (evento) => {
   evento.preventDefault()
@@ -166,6 +166,7 @@ formularioDeLogin.addEventListener("submit", async (evento) => {
   loginIdentifier.value = '';
   loginPassword.value = '';
 })
+}
 //     const emailAddressLogin = document.getElementById("email-address-login")
 //     const passwordLogin = document.getElementById("password-login")
 //     const btnEntrarForm = document.getElementById("btn-entrar-form")
@@ -274,4 +275,3 @@ formularioDeLogin.addEventListener("submit", async (evento) => {
 //         emailAddressLogin.value = "";
 //         passwordLogin.value = "";
 //     });
-}
