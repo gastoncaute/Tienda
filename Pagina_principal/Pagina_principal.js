@@ -15,3 +15,10 @@ setupPrecios(document.getElementById('btn-precios'))
 import './user_menu/user_menu.css'
 import { setupUser } from "./user_menu/user_menu.js";
 setupUser(document.getElementById('user-btn'))
+
+
+const btnAbrirLista = document.getElementById("btn_listadeproductos")
+
+btnAbrirLista.addEventListener("click", () => {
+    window.location.href="./productos/productos.html"
+})
