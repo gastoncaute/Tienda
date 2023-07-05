@@ -16,7 +16,6 @@ import './user_menu/user_menu.css';
 import { setupUser } from "./user_menu/user_menu.js";
 setupUser(document.getElementById('user-btn'));
 
-import './productos/productos.css'
 const btnAbrirLista = document.getElementById("btn-lista-productos")
 btnAbrirLista.addEventListener("click", () => {
     window.location.href="./productos/productos.html"
