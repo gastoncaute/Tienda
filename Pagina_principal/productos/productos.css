@@ -14,7 +14,7 @@ body {
     background-attachment: fixed;
 }
 
-section {
+.products-container {
     background: rgba(0, 128, 255, 0.5);
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@ section {
     margin: 5rem;
 }
 
-section h1 {
+.products-container h1 {
     font-size: xx-large;
     margin: 3rem 0;
 }

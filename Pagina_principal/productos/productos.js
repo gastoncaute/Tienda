@@ -26,7 +26,7 @@ export function setUpProductos() {
             this.insertAdjacentHTML("beforeend", html)
         }
     }
-    customElements.define("user-card", ProductCard)
+    customElements.define("product-card", ProductCard)
 
     const listaProductos = document.getElementById('lista-productos');
     let contenidoDelProducto = []
@@ -45,7 +45,7 @@ export function setUpProductos() {
             const ul = document.createElement("ul")
             for(const dato of Object.values(datos)) {
                 const li= document.createElement("li")
-                li.innerHTML = `<user-card title="${datos.title}" price="${datos.price}" description="${datos.description}" category="${datos.category}" image="${datos.image}" rating="${datos.rating.rate}"/>`
+                li.innerHTML = `<product-card title="${datos.title}" price="${datos.price}" description="${datos.description}" category="${datos.category}" image="${datos.image}" rating="${datos.rating.rate}"/>`
                 ul.appendChild(li)
                 listaProductos.appendChild(ul)
             }
