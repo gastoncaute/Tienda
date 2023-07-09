@@ -14,7 +14,11 @@ body {
     background-attachment: fixed;
 }
 
+<<<<<<< HEAD
 .products-container {
+=======
+.product-container {
+>>>>>>> 202affd08eb1e54223581b7023e47c5920a9c00b
     background: rgba(0, 128, 255, 0.5);
     display: flex;
     flex-direction: column;
@@ -24,7 +28,11 @@ body {
     margin: 5rem;
 }
 
+<<<<<<< HEAD
 .products-container h1 {
+=======
+.product-container h1 {
+>>>>>>> 202affd08eb1e54223581b7023e47c5920a9c00b
     font-size: xx-large;
     margin: 3rem 0;
 }

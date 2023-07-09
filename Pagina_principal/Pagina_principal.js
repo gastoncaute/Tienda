@@ -19,3 +19,7 @@ setupUser(document.getElementById('user-btn'));
 import './productos/productos.css'
 import { setUpProductos } from "./productos/productos.js";
 setUpProductos(document.getElementById("btn-lista-productos"))
+
+import './pagina_de_producto/pagina_de_producto.css'
+import { setUpProducto } from "./pagina_de_producto/pagina_de_producto.js";
+setUpProducto(document.getElementById("product"))
