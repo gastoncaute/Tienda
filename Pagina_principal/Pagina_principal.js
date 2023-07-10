@@ -19,3 +19,6 @@ setupUser();
 import './productos/productos.css'
 import { setUpProductos } from "./productos/productos.js";
 setUpProductos()
+
+import { setUpCarrito } from "./carrito_de_compra/carrito_de_compras.js";
+setUpCarrito()
