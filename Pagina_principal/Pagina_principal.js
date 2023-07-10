@@ -19,6 +19,3 @@ setupUser();
 import './productos/productos.css'
 import { setUpProductos } from "./productos/productos.js";
 setUpProductos()
-
-import { setUpInput } from "./input_busqueda/input_busqueda.js";
-setUpInput()
