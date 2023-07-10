@@ -21,7 +21,7 @@
 
 .product-articules {
     display: grid;
-    grid-template-columns: 40rem 20rem 10rem 30rem;
+    grid-template-columns: 40rem 20rem 10rem 1fr;
     grid-template-rows: auto auto auto;
     margin: 5rem 1rem;
 }
