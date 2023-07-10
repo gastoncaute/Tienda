@@ -28,3 +28,16 @@
 #navbar ul li button:hover{
     color: #000;
 }
+
+#navbar ul li a {
+    border: none;
+    background: none;
+    outline: none;
+    color: #fff;
+    font-size: large;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: #000;
+}
