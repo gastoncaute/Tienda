@@ -14,6 +14,7 @@ export function setUpProductos() {
                     <p class="product-description">Descripción: ${this.description}</p>
                     <p class="product-category">Categoría: ${this.category}</p>
                     <p class="product-price">Precio: ${this.price}</p>
+                    <button class="btn-cart" id="btn-cart">Agregar al Carrito</button>
                     <p class="product-rating">Valoración: ${this.rating}</p>
                     <img src="${this.image}" alt="Imagen del producto" class="product-image">
                 </li>

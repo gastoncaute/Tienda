@@ -11,6 +11,8 @@
 .product-container h1 {
     font-size: xx-large;
     margin: 3rem 0;
+    font-weight: bolder;
+    color: #000;
 }
 
 #lista-productos {
@@ -19,24 +21,28 @@
 
 .product-articules {
     display: grid;
-    grid-template-columns: 40rem 20rem 50rem;
-    grid-template-rows: auto auto auto auto;
-    margin: 5rem 0;
+    grid-template-columns: 40rem 20rem 10rem 30rem;
+    grid-template-rows: auto auto auto;
+    margin: 5rem 1rem;
 }
 
 .product-title {
     background: rgb(148, 148, 148, 0.5);
     border-radius:10px ;
-    grid-column: 1 / 3;
+    grid-column: 1 / 4;
     grid-row: 1 / 2;
     font-size: x-large;
     padding: 0 5rem;
     margin-right: 2rem;
     height: auto;
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    color: #000;
 }
 
 .product-image {
-    grid-column: 3 / 4;
+    grid-column: 4 / 5;
     grid-row: 1 / 5;
     max-width: 10rem;
 }
@@ -45,18 +51,26 @@
     padding-left: 1rem;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    color: #000;
+    margin: 2rem 1rem;
 }
 
-.product-rating{
+.product-rating {
     padding-left: 1rem;
     grid-column: 2 / 3;
     grid-row: 3 / 4;
+    color: #000;
+    margin: 2rem 1rem;
 }
 
 .product-price {
     padding-left: 1rem;
-    grid-column: 2 / 3;
-    grid-row: 4 / 5;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    font-size: large;
+    font-weight: bold;
+    color: #000;
+    margin: 2rem -2rem;
 }
 
 .product-description {
@@ -66,4 +80,25 @@
     grid-column: 1 / 2;
     grid-row: 2 / 5;
     justify-content: space-between;
+    color: #000;
+}
+
+.product-articules button {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    all: unset;
+    height: 3rem;
+    width: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: rgba(148, 148, 148, 0.5);
+    color: #fff;
+    border-radius: 10px;
+    margin: 2rem -2rem;
+}
+
+.product-articules button:hover {
+    background: rgb(65, 65, 65)
 }
