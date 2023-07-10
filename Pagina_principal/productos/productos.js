@@ -97,4 +97,24 @@ export function setUpProductos() {
         });
     listaProductos.appendChild(ul);
     }
+
+    const inputBusqueda = document.getElementById('input-busqueda')
+    inputBusqueda.addEventListener("input", () => {
+        const terminoBusqueda = inputBusqueda.value.trim().toLowerCase();
+        buscarProductos(terminoBusqueda);
+    });
+    function buscarProductos(termino) {
+        listaProductos.innerHTML = "";
+        const productosFiltrados = contenidoDelProducto.filter((producto) => {
+            const titulo = producto.title.toLowerCase();
+            return titulo.includes(termino);
+        });
+        const ul = document.createElement("ul");
+        productosFiltrados.forEach((producto) => {
+            const li = document.createElement("li");
+            li.innerHTML = `<product-card title="${producto.title}" price="${producto.price}" description="${producto.description}" category="${producto.category}" image="${producto.image}" rating="${producto.rating.rate}"/>`;
+            ul.appendChild(li);
+        });
+        listaProductos.appendChild(ul);
+    }
 }

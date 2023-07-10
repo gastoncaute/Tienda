@@ -2,24 +2,23 @@ import './Pagina_principal.css';
 
 import './Navbar/navbar.css';
 import { setupNavbar } from "./Navbar/navbar.js";
-setupNavbar(document.getElementById('navbar'));
+setupNavbar();
 
 import './Categorias_menu/categorias_menu.css';
 import { setupCategorias } from './Categorias_menu/categorias_menu.js';
-setupCategorias(document.getElementById('btn-categorias'));
+setupCategorias();
 
 import './Precios-menu/precios-menu.css';
 import { setupPrecios } from './Precios-menu/precios-menu.js';
-setupPrecios(document.getElementById('btn-precios'));
+setupPrecios();
 
 import './user_menu/user_menu.css';
 import { setupUser } from "./user_menu/user_menu.js";
-setupUser(document.getElementById('user-btn'));
+setupUser();
 
 import './productos/productos.css'
 import { setUpProductos } from "./productos/productos.js";
-setUpProductos(document.getElementById("btn-lista-productos"))
+setUpProductos()
 
-import './pagina_de_producto/pagina_de_producto.css'
-import { setUpProducto } from "./pagina_de_producto/pagina_de_producto.js";
-setUpProducto(document.getElementById("product"))
+import { setUpInput } from "./input_busqueda/input_busqueda.js";
+setUpInput()
